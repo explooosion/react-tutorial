@@ -4,7 +4,6 @@ import './TodoList.scss';
 class TodoList extends Component {
 
   removeItem(index) {
-    this.props.onRemove(index);
   }
 
   checkItem(index, status) {
@@ -21,7 +20,7 @@ class TodoList extends Component {
                 <li key={index}>
                   <input id={`todo-${index}`} type="checkbox" checked={status ? true : false} onChange={(e) => this.checkItem(index, e.target.checked)} />
                   <label htmlFor={`todo-${index}`} style={{ userSelect: 'none' }} >{name}</label>
-                  <button onClick={() => this.removeItem(index)}>Delete</button>
+                  <button onClick={() => this.props.onRemove(index)}>Delete</button>
                 </li>
               )
             })

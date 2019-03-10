@@ -25,16 +25,17 @@ class App extends Component {
   }
 
   remove = (key) => {
+    console.log(key);
     const list = this.state.list.filter((value, index) => index !== key);
     this.setState({ list });
   }
 
-  check = (key, status) => {
-    const list = this.state.list.map((value, index) => {
-      return (key === index) ? { ...value, status } : value;
-    });
-    this.setState({ list });
-  }
+  // check = (key, status) => {
+  //   const list = this.state.list.map((value, index) => {
+  //     return (key === index) ? { ...value, status } : value;
+  //   });
+  //   this.setState({ list });
+  // }
 
   render() {
     return (

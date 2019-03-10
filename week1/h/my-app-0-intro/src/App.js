@@ -3,14 +3,20 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+
+  state = {
+    title: 'React',
+    age: 18,
+  }
+
   render() {
+    console.log(this.props);
     return (
-      <div className="App">
+      <div className="App" style={{ color: 'red', backgroundColor: 'red' }}>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+          <h1>{this.state.title}</h1>
+          {/* 若是在子元件註解要加 {}  */}
           <a
             className="App-link"
             href="https://reactjs.org"

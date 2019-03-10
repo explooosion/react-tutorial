@@ -15,10 +15,11 @@ class App extends Component {
   }
 
   greet4 = () => {
-    alert('hi');
+    alert('hi' + this.state.title);
   }
 
   greet5() {
+    // this
     alert(`hi ${this.state.title}`);
   }
 
@@ -26,9 +27,9 @@ class App extends Component {
     alert(`hi ${this.state.title}`);
   }
 
-  greet7(teacher) {
+  greet7(e) {
     // 常用做法
-    alert(`hi ${teacher}`);
+    alert(`hi ${e}`);
   }
 
   greet8 = (e) => {
@@ -48,7 +49,7 @@ class App extends Component {
         <button onClick={this.greet4}>Click_4</button>
         <button onClick={this.greet5}>Click_5(x)</button>
         <button onClick={this.greet6.bind(this)}>Click_6</button>
-        <button onClick={(e) => this.greet7('Jack')}>Click_7</button>
+        <button onClick={(e) => this.greet7(e)}>Click_7</button>
         <button onClick={this.greet8}>Click_8</button>
       </div>
     );

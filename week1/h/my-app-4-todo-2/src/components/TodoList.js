@@ -7,7 +7,6 @@ class TodoList extends Component {
     // }
 
     render() {
-        console.log(this.props);
         return (
             <div className="todolist">
                 <ul>

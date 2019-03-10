@@ -1,23 +1,29 @@
 import React from 'react';
 
-// class TodoAddForm extends Component {
-//   render() {
-//     return (
-//       <div className="todo-add-form">
-//         <input />
-//         <button>Add</button>
-//       </div>
-//     );
-//   }
-// }
+class TodoAddForm extends React.Component {
 
-const TodoAddForm = () => {
-  return (
-    <div className="todo-add-form">
-      <input />
-      <button>Add</button>
-    </div>
-  );
+  state = {
+    name: ''
+  }
+
+  render() {
+    this.props.onAdd('asd');
+    return (
+      <div className="todo-add-form">
+        <input value={this.state.name} />
+        <button>Add</button>
+      </div>
+    );
+  }
 }
+
+// const TodoAddForm = () => {
+//   return (
+//     <div className="todo-add-form">
+//       <input />
+//       <button>Add</button>
+//     </div>
+//   );
+// }
 
 export default TodoAddForm;

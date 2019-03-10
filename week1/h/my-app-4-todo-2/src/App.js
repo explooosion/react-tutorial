@@ -14,11 +14,10 @@ class App extends Component {
     ],
   };
 
-  add = (name) => {
-    const list = [
-      ...this.state.list,
-      { ...name, status: false },
-    ];
+  add = (obj) => {
+    // // 1
+    const list = this.state.list;
+    list.push({ ...obj, status: false });
     this.setState({ list });
   }
 
