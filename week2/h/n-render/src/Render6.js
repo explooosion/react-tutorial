@@ -7,7 +7,7 @@ class App extends Component {
   }
 
   render() {
-    // functional render
+    // method
     return (
       <div>
         {this.renderTeacher()}
