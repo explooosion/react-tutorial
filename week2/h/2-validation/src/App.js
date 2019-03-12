@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Example />
+        <Example list={[1, 2, 3]} />
       </div>
     );
   }
