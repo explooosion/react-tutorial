@@ -5,8 +5,7 @@ import './App.css';
 
 // Router
 import Home from './routers/Home';
-import Product from './routers/Product';
-import About from './routers/About';
+import Dashboard from './routers/Dashboard';
 
 class App extends Component {
   render() {
@@ -19,16 +18,13 @@ class App extends Component {
                 <Link to="/">Home</Link>
               </li>
               <li>
-                <Link to="/product">Product</Link>
-              </li>
-              <li>
-                <Link to="/about">About</Link>
+                <Link to="/dashboard">Dashboard</Link>
               </li>
             </ul>
           </nav>
+          { /** exact 精確的 = 完全配對 */}
           <Route path="/" exact component={Home} />
-          <Route path="/product" component={Product} />
-          <Route path="/about" component={About} />
+          <Route path="/dashboard" component={Dashboard} />
         </div>
       </Router>
     );
