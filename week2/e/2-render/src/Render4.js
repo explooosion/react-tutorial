@@ -8,18 +8,12 @@ class App extends Component {
   }
 
   render() {
-    // conditional operator
+    // preventing component from rendering
     return (
       <div>
         {
-          this.state.isTeacher ? <h1>Teacher</h1> : <h1>Student</h1>
+          this.state.isTeacher ? <h1>Teacher</h1> : null
         }
-        {
-          this.state.isTeacher
-            ? <h1>Teacher</h1>
-            : <h1>Student</h1>
-        }
-        {this.state.isTeacher ? <h1>Teacher</h1> : <h1>Student</h1>}
       </div>
     );
   }

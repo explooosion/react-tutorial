@@ -2,18 +2,15 @@ import React, { Component } from 'react';
 
 class App extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = { isTeacher: true };
+  renderTeacher() {
+    return <h1>Teacher</h1>;
   }
 
   render() {
-    // preventing component from rendering
+    // method
     return (
       <div>
-        {
-          this.state.isTeacher ? <h1>Teacher</h1> : null
-        }
+        {this.renderTeacher()}
       </div>
     );
   }
