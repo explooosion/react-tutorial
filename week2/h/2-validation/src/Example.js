@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
  
-class App extends React.Component {
+class Example extends React.Component {
   render() {
     return (
       <div>
@@ -11,8 +11,8 @@ class App extends React.Component {
   }
 }
 
-App.propTypes = {
+Example.propTypes = {
   list: PropTypes.array,
 }
 
-export default App;
+export default Example;

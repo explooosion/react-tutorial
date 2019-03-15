@@ -1,6 +1,6 @@
 import React from 'react';
 
-class App extends React.Component {
+class Example extends React.Component {
   render() {
     return (
       <div>
@@ -10,8 +10,8 @@ class App extends React.Component {
   }
 }
 
-App.defaultProps = {
+Example.defaultProps = {
   list: [],
 }
 
-export default App;
+export default Example;

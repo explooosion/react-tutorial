@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class App extends Component {
+class Example extends Component {
 
   state = {
     gender: '男',
@@ -43,4 +43,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Example;
