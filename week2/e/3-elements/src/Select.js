@@ -20,7 +20,7 @@ class Example extends Component {
   }
 
   renderList() {
-    this.state.list.map(({ name, value }) =>
+    return this.state.list.map(({ name, value }) =>
       <option key={`${name}-${value}`} value={value}>{name}</option>
     )
   }

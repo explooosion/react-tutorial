@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Example from './Checkbox';
+import Example from './Select';
 
 class App extends Component {
 
