@@ -19,8 +19,10 @@ class Example extends Component {
     flexFlow: 'column'
   }
 
-  renderList({ name, value }) {
-    return (<option key={`${name}-${value}`} value={value}>{name}</option>)
+  renderList() {
+    this.state.list.map(({ name, value }) =>
+      <option key={`${name}-${value}`} value={value}>{name}</option>
+    )
   }
 
   onListChange(value) {
@@ -32,7 +34,7 @@ class Example extends Component {
       <div className="App" style={this.layout}>
         Select:{this.state.active}
         <select onChange={(e) => this.onListChange(e.target.value)}>
-          {this.state.list.map(l => this.renderList(l))}
+          {this.renderList()}
         </select>
       </div >
     );
