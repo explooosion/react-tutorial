@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Product extends Component {
 
   onGoback() {
-    this.props.history.push('/');
+    this.props.history.goBack();
   }
 
   onGoToAbout() {
