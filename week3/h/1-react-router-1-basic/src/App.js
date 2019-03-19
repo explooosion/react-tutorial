@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter, Route, Link } from "react-router-dom";
 
 import './App.css';
 
@@ -11,7 +11,7 @@ import About from './routers/About';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter>
         <div className="App">
           <nav className="App-Menu">
             <ul style={{ listStyleType: 'none' }}>
@@ -31,7 +31,7 @@ class App extends Component {
           <Route path="/product" component={Product} />
           <Route path="/about" component={About} />
         </div>
-      </Router>
+      </BrowserRouter>
     );
   }
 }

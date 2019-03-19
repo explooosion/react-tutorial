@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import './App.css';
 
 // Router
+import Home from './routers/Home';
 import Product from './routers/Product';
 
 class App extends Component {
@@ -14,10 +15,13 @@ class App extends Component {
           <nav className="App-Menu">
             <ul style={{ listStyleType: 'none' }}>
               <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
                 <Link to="/product">Product</Link>
               </li>
               <li>
-                <Link to="/product/desk">Product id=desk</Link>
+                <Link to="/product/1">Product id=1</Link>
               </li>
               <li>
                 <Link to="/product/2">Product id=2</Link>
@@ -25,6 +29,7 @@ class App extends Component {
             </ul>
           </nav>
           { /** exact 精確的 = 完全配對 */}
+          <Route path="/" exact component={Home} />
           <Route path="/product/" exact component={Product} />
           <Route path="/product/:id" component={Product} />
         </div>
