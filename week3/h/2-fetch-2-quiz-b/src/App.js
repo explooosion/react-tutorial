@@ -27,7 +27,7 @@ class App extends Component {
     this.setState({ login });
   }
 
-  renderUserlist = () => {
+  renderUserlist() {
     return (
       <UserList
         list={this.state.list}
@@ -43,7 +43,7 @@ class App extends Component {
           <Link to="/manage">Manage</Link>
           <br />
           Login:<input type="checkbox" checked={this.state.login} onChange={(e) => this.onLoginChange(e.target.checked)} />
-          <Route path="/manage" render={this.renderUserlist} />
+          <Route path="/manage" render={() => this.renderUserlist} />
         </div>
       </BrowserRouter>
     );

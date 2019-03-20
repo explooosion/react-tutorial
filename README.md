@@ -13,3 +13,8 @@
 
 - e - [https://hackmd.io/p/BJLviw8DE#/](https://hackmd.io/p/BJLviw8DE#/)
 - h - [https://hackmd.io/p/rkgS-dmI4#/](https://hackmd.io/p/rkgS-dmI4#/)
+
+## week3
+
+- e - [https://hackmd.io/p/HJe6HxCPN#/](https://hackmd.io/p/HJe6HxCPN#/)
+- h - [https://hackmd.io/p/rytGJ5UvV#/](https://hackmd.io/p/rytGJ5UvV#/)

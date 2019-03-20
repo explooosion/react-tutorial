@@ -6,8 +6,17 @@ import './App.css';
 // Router
 import Home from './routers/Home';
 import Product from './routers/Product';
+import About from './routers/About';
 
 class App extends Component {
+
+  constructor() {
+    super();
+    this.state = {
+      title: '關於'
+    }
+  }
+
   render() {
     return (
       <Router>
@@ -21,17 +30,14 @@ class App extends Component {
                 <Link to="/product">Product</Link>
               </li>
               <li>
-                <Link to="/product/1">Product id=1</Link>
-              </li>
-              <li>
-                <Link to="/product/2">Product id=2</Link>
+                <Link to="/about">About</Link>
               </li>
             </ul>
           </nav>
           { /** exact 精確的 = 完全配對 */}
           <Route path="/" exact component={Home} />
-          <Route path="/product/" exact component={Product} />
-          <Route path="/product/:id" component={Product} />
+          <Route path="/product" component={Product} />
+          <Route path="/about" render={() => <About title={this.state.title} />} />
         </div>
       </Router>
     );
