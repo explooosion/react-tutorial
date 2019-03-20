@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import './UserList.scss';
+import './TodoList.scss';
 
 import PropTypes from 'prop-types';
 
-class UserList extends Component {
-  renderUserList() {
+class TodoList extends Component {
+  renderTodoList() {
     return this.props.list.map((item, index) => {
-      const { id, name, username, email, website } = item;
+      const { userId, id, title, completed } = item;
       return (
         <tr key={`user-${index}`}>
+          <td>{userId}</td>
           <td>{id}</td>
-          <td>{name}</td>
-          <td>{username}</td>
-          <td>{email}</td>
-          <td><a href={`http://${website}`}>{website}</a></td>
+          <td>{title}</td>
+          <td><input type="checkbox" defaultChecked={completed} /></td>
         </tr>
       )
     });
@@ -22,19 +21,17 @@ class UserList extends Component {
   render() {
     return (
       <div className="user-list">
-        {this.props.title}
         <table border="1">
           <thead>
             <tr>
+              <th>userId</th>
               <th>id</th>
-              <th>name</th>
-              <th>username</th>
-              <th>email</th>
-              <th>website</th>
+              <th>title</th>
+              <th>completed</th>
             </tr>
           </thead>
           <tbody>
-            {this.renderUserList()}
+            {this.renderTodoList()}
           </tbody>
         </table>
       </div>
@@ -42,12 +39,12 @@ class UserList extends Component {
   }
 }
 
-UserList.defaultProps = {
+TodoList.defaultProps = {
   list: [],
 }
 
-UserList.propTypes = {
+TodoList.propTypes = {
   list: PropTypes.array,
 }
 
-export default UserList;
+export default TodoList;
