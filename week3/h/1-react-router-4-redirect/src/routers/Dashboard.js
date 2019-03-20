@@ -1,4 +1,5 @@
-import React, { Component, Redirect } from 'react';
+import React, { Component } from 'react';
+import { Redirect } from 'react-router'
 
 class Dashboard extends Component {
   state = {
