@@ -21,6 +21,6 @@
 
 ## week4
 
-- e - 難產中...
+- e - [https://hackmd.io/p/S17Cegs_E#/](https://hackmd.io/p/S17Cegs_E#/)
 
 - h - [https://hackmd.io/p/BJN4iKuuE#/](https://hackmd.io/p/BJN4iKuuE#/)
