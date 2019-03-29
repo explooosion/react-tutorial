@@ -1,0 +1,20 @@
+.product {
+  margin: 0 auto;
+}
+
+.group {
+  display: flex;
+  justify-content: center;
+}
+
+.group  .group-detail {
+  position: relative;
+  margin-left: 2rem;
+  text-align: left;
+  font-size: 2rem;
+}
+
+.group .group-goback {
+  position: absolute;
+  bottom: 0;
+}

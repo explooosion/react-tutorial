@@ -1,0 +1,9 @@
+.products {
+  border-collapse: collapse;
+  cursor: pointer;
+}
+
+.products tr:hover {
+  background-color: #ffeeee;
+  transition: all .2s ease-in-out;
+}
