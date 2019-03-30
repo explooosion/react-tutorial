@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import { BrowserRouter as Router, Route } from "react-router-dom"
 
 import Home from './routes/Home';
 
@@ -11,6 +11,8 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
+
+          {/** nav 是選單列 */}
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div className="container">
               <a className="navbar-brand" href="#">Start Bootstrap</a>
@@ -38,13 +40,16 @@ class App extends Component {
             </div>
           </nav>
 
+          {/** 將首頁內容放到 Home 組件 */}
+          <Route path="/" exact component={Home} />
+
+          {/** 頁尾是可以組件化的 */}
           <footer className="py-5 bg-dark">
             <div className="container">
               <p className="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
             </div>
           </footer>
 
-          <Route path="/" exact component={Home} />
         </div>
       </Router>
     );
