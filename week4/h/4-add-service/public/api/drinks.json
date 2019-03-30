@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "茉莉綠茶",
+        "price": 25,
+        "picture": "https://i.imgur.com/E7zMHJB.png"
+    },
+    {
+        "id": 2,
+        "name": "阿薩姆紅茶",
+        "price": 25,
+        "picture": "https://i.imgur.com/TopDBQD.png"
+    },
+    {
+        "id": 3,
+        "name": "黃金烏龍茶",
+        "price": 25,
+        "picture": "https://i.imgur.com/uUVA7Tp.jpg"
+    },
+    {
+        "id": 4,
+        "name": "珍珠奶茶",
+        "price": 45,
+        "picture": "https://i.imgur.com/DHxXogL.png"
+    },
+    {
+        "id": 5,
+        "name": "金桔檸檬",
+        "price": 55,
+        "picture": "https://i.imgur.com/mnhqKp7.png"
+    }
+]
