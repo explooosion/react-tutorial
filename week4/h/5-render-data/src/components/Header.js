@@ -20,9 +20,13 @@ class Header extends Component {
               <span className="sr-only">(current)</span>
                   </Link>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to="/product">Product</Link>
-                </li>
+                {
+                  /**
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/product">Product</Link>
+                  </li>
+                   */
+                }
                 <li className="nav-item">
                   <a className="nav-link" href="#">Services</a>
                 </li>

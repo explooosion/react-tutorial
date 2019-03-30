@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import { Link } from 'react-router-dom';
 
 class Product extends Component {
   render() {
@@ -47,7 +48,7 @@ class Product extends Component {
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis et enim aperiam inventore, similique necessitatibus neque non! Doloribus, modi sapiente laboriosam aperiam fugiat laborum. Sequi mollitia, necessitatibus quae sint natus.</p>
                   <small className="text-muted">Posted by Anonymous on 3/1/17</small>
                   <hr />
-                  <a href="#" className="btn btn-success">Leave a Review</a>
+                  <Link to="/" className="btn btn-success">Leave a Review</Link>
                 </div>
               </div>
 

@@ -2,10 +2,15 @@
 import React, { Component } from 'react';
 
 // import { BrowserRouter as Router, Route, Link } from "react-router-dom"
-import { Link } from 'react-router-dom';
+import { Redirect, Link } from "react-router-dom"
 
 class Product extends Component {
   render() {
+    const p = this.props.location.state;
+    if (!p) return <Redirect to="/" />;
+
+    const { name, price, picture } = p.product;
+
     return (
       <div className="Product">
         <div className="container">
@@ -24,10 +29,10 @@ class Product extends Component {
             <div className="col-lg-9">
 
               <div className="card mt-4">
-                <img className="card-img-top img-fluid" src="http://placehold.it/900x400" alt="" />
+                <img className="card-img-top img-fluid" src={picture} alt="" />
                 <div className="card-body">
-                  <h3 className="card-title">Product Name</h3>
-                  <h4>$24.99</h4>
+                  <h3 className="card-title">{name}</h3>
+                  <h4>${price}</h4>
                   <p className="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente dicta fugit fugiat hic aliquam itaque facere, soluta. Totam id dolores, sint aperiam sequi pariatur praesentium animi perspiciatis molestias iure, ducimus!</p>
                   <span className="text-warning">&#9733; &#9733; &#9733; &#9733; &#9734;</span>
                   4.0 stars
